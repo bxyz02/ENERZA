@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Enerza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="enerza-removebg-preview.png" type="image/png">
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=ASQRbLVRA1dU-6gRLGNkivQKGDscILq8XDQYydtAnss4awKWxUQnME1PJwU7dtsqGjWTc4XZ0Z2s2f_2&currency=DZD"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="black">ENERZA</span><span class="blue"></span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-link" data-page="home">Home</a>
+            <a href="categories.html" class="nav-link" data-page="categories">Categories</a>
+            <a href="products.html" class="nav-link" data-page="products">Products</a>
+            <a href="about.html" class="nav-link" data-page="about">About Us</a>
+            <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+            <div class="language-switcher">
+                <button class="language-btn active" data-lang="en">EN</button>
+                <button class="language-btn" data-lang="fr">FR</button>
+                <button class="language-btn" data-lang="ar">AR</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-container active" id="checkoutPage">
+        <div class="checkout-container">
+            <div class="checkout-steps">
+                <div class="step active" id="step1">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Personal Info</div>
+                </div>
+                <div class="step" id="step2">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Shipping Info</div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-number">3</div>
+                    <div class="step-label">Payment</div>
+                </div>
+            </div>
+
+            <div class="checkout-content">
+                <!-- Product Summary -->
+                <div class="checkout-product">
+                    
+                    <div class="checkout-product-info">
+                        <h3>PS4 Controller</h3>
+                        <div class="checkout-product-price">8,000 DA</div>
+                        <div class="checkout-quantity">
+                            <button id="decrease-qty">-</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button id="increase-qty">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Checkout Form -->
+                <form id="checkoutForm">
+                    <!-- Step 1: Personal Info -->
+                    <div class="checkout-form" id="personalInfoForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name*</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="checkout-actions">
+                            <button type="button" class="next-btn" id="toShippingInfo">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Shipping Info -->
+                    <div class="checkout-form" id="shippingInfoForm" style="display: none;">
+                        <div class="form-group">
+                            <label for="address">Address*</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="wilaya">Wilaya*</label>
+                            <select id="wilaya" name="wilaya" required>
+                                <option value="">Select your wilaya</option>
+                                <option value="Adrar">Adrar</option>
+                                <option value="Chlef">Chlef</option>
+                                <option value="Laghouat">Laghouat</option>
+                                <option value="Oum El Bouaghi">Oum El Bouaghi</option>
+                                <option value="Batna">Batna</option>
+                                <option value="Béjaïa">Béjaïa</option>
+                                <option value="Biskra">Biskra</option>
+                                <option value="Béchar">Béchar</option>
+                                <option value="Blida">Blida</option>
+                                <option value="Bouira">Bouira</option>
+                                <option value="Tamanrasset">Tamanrasset</option>
+                                <option value="Tébessa">Tébessa</option>
+                                <option value="Tlemcen">Tlemcen</option>
+                                <option value="Tiaret">Tiaret</option>
+                                <option value="Tizi Ouzou">Tizi Ouzou</option>
+                                <option value="Algiers">Algiers</option>
+                                <option value="Djelfa">Djelfa</option>
+                                <option value="Jijel">Jijel</option>
+                                <option value="Sétif">Sétif</option>
+                                <option value="Saïda">Saïda</option>
+                                <option value="Skikda">Skikda</option>
+                                <option value="Sidi Bel Abbès">Sidi Bel Abbès</option>
+                                <option value="Annaba">Annaba</option>
+                                <option value="Guelma">Guelma</option>
+                                <option value="Constantine">Constantine</option>
+                                <option value="Médéa">Médéa</option>
+                                <option value="Mostaganem">Mostaganem</option>
+                                <option value="M'Sila">M'Sila</option>
+                                <option value="Mascara">Mascara</option>
+                                <option value="Ouargla">Ouargla</option>
+                                <option value="Oran">Oran</option>
+                                <option value="El Bayadh">El Bayadh</option>
+                                <option value="Illizi">Illizi</option>
+                                <option value="Bordj Bou Arréridj">Bordj Bou Arréridj</option>
+                                <option value="Boumerdès">Boumerdès</option>
+                                <option value="El Tarf">El Tarf</option>
+                                <option value="Tindouf">Tindouf</option>
+                                <option value="Tissemsilt">Tissemsilt</option>
+                                <option value="El Oued">El Oued</option>
+                                <option value="Khenchela">Khenchela</option>
+                                <option value="Souk Ahras">Souk Ahras</option>
+                                <option value="Tipaza">Tipaza</option>
+                                <option value="Mila">Mila</option>
+                                <option value="Aïn Defla">Aïn Defla</option>
+                                <option value="Naâma">Naâma</option>
+                                <option value="Aïn Témouchent">Aïn Témouchent</option>
+                                <option value="Ghardaïa">Ghardaïa</option>
+                                <option value="Relizane">Relizane</option>
+                                <option value="Timimoun">Timimoun</option>
+                                <option value="Bordj Badji Mokhtar">Bordj Badji Mokhtar</option>
+                                <option value="Ouled Djellal">Ouled Djellal</option>
+                                <option value="Béni Abbès">Béni Abbès</option>
+                                <option value="In Salah">In Salah</option>
+                                <option value="In Guezzam">In Guezzam</option>
+                                <option value="Touggourt">Touggourt</option>
+                                <option value="Djanet">Djanet</option>
+                                <option value="El M'Ghair">El M'Ghair</option>
+                                <option value="El Menia">El Menia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="commune">Commune*</label>
+                            <select id="commune" name="commune" required disabled>
+                                <option value="">Select your commune</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes"></textarea>
+                        </div>
+                        <div class="checkout-actions">
+                            <button type="button" class="back-btn" id="backToPersonalInfo">Back</button>
+                            <button type="button" class="next-btn" id="toPayment">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Payment -->
+                    <div class="checkout-form" id="paymentForm" style="display: none;">
+                        <div class="payment-methods">
+                            <div class="payment-method">
+                                <input type="radio" id="paypal" name="payment" value="paypal">
+                                <i class="fab fa-paypal"></i>
+                                <div class="payment-method-info">
+                                    <h4>PayPal</h4>
+                                    <p>Pay securely with your PayPal account</p>
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="edhahabia" name="payment" value="edhahabia">
+                                <i class="fas fa-credit-card"></i>
+                                <div class="payment-method-info">
+                                    <h4>Edhahabia</h4>
+                                    <p>Algerian online payment system</p>
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="cod" name="payment" value="cod" checked>
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div class="payment-method-info">
+                                    <h4>Cash on Delivery</h4>
+                                    <p>Pay when you receive your order</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="paypal-button-container"></div>
+                        <div class="checkout-actions">
+                            <button type="button" class="back-btn" id="backToShippingInfo">Back</button>
+                            <button type="submit" class="next-btn">Complete Order</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Enerza</h3>
+                <p>Your trusted source for quality tech products in Algeria since 2023.</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/+213671851086"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/ENERZA_STORE/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html" class="nav-link" data-page="home">Home</a>
+                <a href="categories.html" class="nav-link" data-page="categories">Categories</a>
+                <a href="products.html" class="nav-link" data-page="products">Products</a>
+                <a href="about.html" class="nav-link" data-page="about">About Us</a>
+                <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Zeboudja, Chlef, Algeria</p>
+                <p><i class="fas fa-phone"></i> +213 671 851 086</p>
+                <p><i class="fas fa-envelope"></i> bznpowertech@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Enerza. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

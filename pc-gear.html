@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC Gear - Enerza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="enerza-removebg-preview.png" type="image/png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="black">ENERZA</span><span class="blue"></span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-link" data-page="home">Home</a>
+            <a href="categories.html" class="nav-link" data-page="categories">Categories</a>
+            <a href="products.html" class="nav-link" data-page="products">Products</a>
+            <a href="about.html" class="nav-link" data-page="about">About Us</a>
+            <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+            <div class="language-switcher">
+                <button class="language-btn active" data-lang="en">EN</button>
+                <button class="language-btn" data-lang="fr">FR</button>
+                <button class="language-btn" data-lang="ar">AR</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-container active" id="pc-gear">
+        <div class="products">
+            <h2 class="section-title">PC Gear</h2>
+            <div class="products-grid">
+                <div class="product">
+                    <img src="ddr4.jpeg" alt="RAM DDR4 8GB" class="product-img">
+                    <div class="product-info">
+                        <span class="product-category">PC Component</span>
+                        <h3>RAM DDR4 8GB</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star-half-alt"></i>
+                            <span>(22)</span>
+                        </div>
+                        <div class="price">4,000 DA</div>
+                        <div class="features">
+                            <div class="feature"><i class="fas fa-check"></i> 3200MHz</div>
+                            <div class="feature"><i class="fas fa-check"></i> CL16</div>
+                            <div class="feature"><i class="fas fa-check"></i> 1.2V</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="buy-now-btn" data-product="RAM DDR4 8GB" data-price="4000">Buy Now</button>
+                            <button class="wishlist-btn" aria-label="Add to wishlist"><i
+                                    class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="ddr31.jpeg" alt="RAM DDR3 8GB" class="product-img">
+                    <div class="product-info">
+                        <span class="product-category">PC Component</span>
+                        <h3>RAM DDR3 8GB</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(15)</span>
+                        </div>
+                        <div class="price">2,500 DA</div>
+                        <div class="features">
+                            <div class="feature"><i class="fas fa-check"></i> 1600MHz</div>
+                            <div class="feature"><i class="fas fa-check"></i> CL11</div>
+                            <div class="feature"><i class="fas fa-check"></i> 1.5V</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="buy-now-btn" data-product="RAM DDR3 8GB" data-price="2500">Buy Now</button>
+                            <button class="wishlist-btn" aria-label="Add to wishlist"><i
+                                    class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <span class="product-badge">Popular</span>
+                    <img src="led.jpg" alt="Gaming Keyboard" class="product-img">
+                    <div class="product-info">
+                        <span class="product-category">PC Accessory</span>
+                        <h3>Gaming Keyboard</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(28)</span>
+                        </div>
+                        <div class="price">7,500 DA</div>
+                        <div class="features">
+                            <div class="feature"><i class="fas fa-check"></i> RGB Backlit</div>
+                            <div class="feature"><i class="fas fa-check"></i> Mechanical</div>
+                            <div class="feature"><i class="fas fa-check"></i> Wrist Rest</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="buy-now-btn" data-product="Gaming Keyboard" data-price="7500">Buy
+                                Now</button>
+                            <button class="wishlist-btn" aria-label="Add to wishlist"><i
+                                    class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="key.webp" alt="Normal Keyboard" class="product-img">
+                    <div class="product-info">
+                        <span class="product-category">PC Accessory</span>
+                        <h3>Normal Keyboard</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(12)</span>
+                        </div>
+                        <div class="price">3,500 DA</div>
+                        <div class="features">
+                            <div class="feature"><i class="fas fa-check"></i> Slim Design</div>
+                            <div class="feature"><i class="fas fa-check"></i> Quiet Keys</div>
+                            <div class="feature"><i class="fas fa-check"></i> Plug & Play</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="buy-now-btn" data-product="Normal Keyboard" data-price="3500">Buy
+                                Now</button>
+                            <button class="wishlist-btn" aria-label="Add to wishlist"><i
+                                    class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="mouse.jpeg" alt="Baseus Mouse" class="product-img">
+                    <div class="product-info">
+                        <span class="product-category">PC Accessory</span>
+                        <h3>Baseus Mouse</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(19)</span>
+                        </div>
+                        <div class="price">4,000 DA</div>
+                        <div class="features">
+                            <div class="feature"><i class="fas fa-check"></i> Wireless</div>
+                            <div class="feature"><i class="fas fa-check"></i> 1600DPI</div>
+                            <div class="feature"><i class="fas fa-check"></i> Ergonomic</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="buy-now-btn" data-product="Baseus Mouse" data-price="4000">Buy Now</button>
+                            <button class="wishlist-btn" aria-label="Add to wishlist"><i
+                                    class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <span class="product-badge">Popular</span>
+                    <img src="redr.webp" alt="Redragon RGB Mouse" class="product-img">
+                    <div class="product-info">
+                        <span class="product-category">PC Accessory</span>
+                        <h3>Redragon Mouse</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(33)</span>
+                        </div>
+                        <div class="price">4,000 DA</div>
+                        <div class="features">
+                            <div class="feature"><i class="fas fa-check"></i> Gaming</div>
+                            <div class="feature"><i class="fas fa-check"></i> 7200DPI</div>
+                            <div class="feature"><i class="fas fa-check"></i> RGB Lighting</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="buy-now-btn" data-product="Redragon Mouse" data-price="4000">Buy Now</button>
+                            <button class="wishlist-btn" aria-label="Add to wishlist"><i
+                                    class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Enerza</h3>
+                <p>Your trusted source for quality tech products in Algeria since 2023.</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/+213671851086"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/ENERZA_STORE/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html" class="nav-link" data-page="home">Home</a>
+                <a href="categories.html" class="nav-link" data-page="categories">Categories</a>
+                <a href="products.html" class="nav-link" data-page="products">Products</a>
+                <a href="about.html" class="nav-link" data-page="about">About Us</a>
+                <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Zeboudja, Chlef, Algeria</p>
+                <p><i class="fas fa-phone"></i> +213 671 851 086</p>
+                <p><i class="fas fa-envelope"></i> bznpowertech@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Enerza. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

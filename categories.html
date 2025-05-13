@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories - Enerza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="enerza-removebg-preview.png" type="image/png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="black">ENERZA</span><span class="blue"></span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-link" data-page="home">Home</a>
+            <a href="categories.html" class="nav-link active" data-page="categories">Categories</a>
+            <a href="products.html" class="nav-link" data-page="products">Products</a>
+            <a href="about.html" class="nav-link" data-page="about">About Us</a>
+            <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+            <div class="language-switcher">
+                <button class="language-btn active" data-lang="en">EN</button>
+                <button class="language-btn" data-lang="fr">FR</button>
+                <button class="language-btn" data-lang="ar">AR</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-container active" id="categories">
+        <div class="categories">
+            <h2 class="section-title">Our Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="smart.jpeg" alt="Smartphones" class="category-img">
+                    <div class="category-info">
+                        <h3>Smartphones</h3>
+                        <a href="smartphones.html" class="explore-btn" data-page="smartphones">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="pc.webp" alt="PC Gear" class="category-img">
+                    <div class="category-info">
+                        <h3>PC Gear</h3>
+                        <a href="pc-gear.html" class="explore-btn" data-page="pc-gear">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="acc.png" alt="Accessories" class="category-img">
+                    <div class="category-info">
+                        <h3>Accessories</h3>
+                        <a href="accessories.html" class="explore-btn" data-page="accessories">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="gaming.jpg" alt="Gaming" class="category-img">
+                    <div class="category-info">
+                        <h3>Gaming</h3>
+                        <a href="gaming.html" class="explore-btn" data-page="gaming">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Enerza</h3>
+                <p>Your trusted source for quality tech products in Algeria since 2023.</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/+213671851086"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/ENERZA_STORE/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html" class="nav-link" data-page="home">Home</a>
+                <a href="categories.html" class="nav-link" data-page="categories">Categories</a>
+                <a href="products.html" class="nav-link" data-page="products">Products</a>
+                <a href="about.html" class="nav-link" data-page="about">About Us</a>
+                <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Zeboudja, Chlef, Algeria</p>
+                <p><i class="fas fa-phone"></i> +213 671 851 086</p>
+                <p><i class="fas fa-envelope"></i> bznpowertech@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Enerza. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
